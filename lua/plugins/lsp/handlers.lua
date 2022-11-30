@@ -76,6 +76,11 @@ M.on_attach = function(client, bufnr)
 		client.server_capabilities.documentFormattingProvider = false
 	end
 
+  -- if client.name == "hls" then
+  --   client.root_dir = vim.fs.dirname(vim.fs.find({'.git'}))
+  --   client.cmd = 
+  -- end
+
 	if client.name == "sumneko_lua" then
 		client.server_capabilities.documentFormattingProvider = false
 	end

@@ -57,8 +57,13 @@ return packer.startup(function(use)
   use { "lukas-reineke/indent-blankline.nvim" } -- indentation guides
   use { "goolord/alpha-nvim" } -- empty buffer screen
 
+  -- Language Specific Plugins
+  use { "mfussenegger/nvim-jdtls" } -- required for jdtls to just work
+  use { "MrcJkb/haskell-tools.nvim" } -- haskell
+
   -- Colorschemes
   use { "ellisonleao/gruvbox.nvim" } -- current colorscheme
+  -- use { "shaunsingh/solarized.nvim" }
 
   -- Bars
   use { "akinsho/bufferline.nvim" } -- top bar
@@ -85,7 +90,6 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim" }
   use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
   use { "github/copilot.vim" }
-  use { "mfussenegger/nvim-jdtls" } -- required for jdtls to just work
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim" }
