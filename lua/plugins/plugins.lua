@@ -63,7 +63,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use { "ellisonleao/gruvbox.nvim" } -- current colorscheme
-  -- use { "shaunsingh/solarized.nvim" }
+  use { "shaunsingh/solarized.nvim" }
 
   -- Bars
   use { "akinsho/bufferline.nvim" } -- top bar
