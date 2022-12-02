@@ -36,10 +36,11 @@ return {
     }
   ),
 
-  s({trig = "([^%a])eq",
+  -- only trigger when whitespace is the preceding character
+  s({trig = "(%s)eq",
   snippetType = "autosnippet",
   dscr = "A LaTeX equation environment",
-  wordTrig = true,
+  wordTrig = false,
   regTrig = true},
     fmt(
       [[

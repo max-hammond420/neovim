@@ -30,6 +30,7 @@ return{
   )
   ),
 
+  -- only trigger when a non-letter character preceeds
   s({trig = "([^%a])para",
   snippetType = "autosnippet",
   dscr = "A LaTeX paragraph environment",
