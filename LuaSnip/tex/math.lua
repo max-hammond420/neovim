@@ -39,13 +39,13 @@ return {
   s({trig = "([^%a])eq",
   snippetType = "autosnippet",
   dscr = "A LaTeX equation environment",
-  wordTrig = false,
+  wordTrig = true,
   regTrig = true},
     fmt(
       [[
-        \begin{equation}
+        \begin{align*}
             <>
-        \end{equation}
+        \end{align*}
       ]],
       -- The insert node is placed in the <> angle brackets
       { i(1) },
@@ -57,8 +57,8 @@ return {
   -- \frac{}{}
   s({trig = '([^%a])ff',
   snippetType = "autosnippet",
-  regTrig = true,
-  wordTrig = false},
+  wordTrig = false,
+  regTrig = true},
     fmta(
       [[<>\frac{<>}{<>}]],
       {
