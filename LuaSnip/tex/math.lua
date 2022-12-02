@@ -36,12 +36,12 @@ return {
     }
   ),
 
-  s({trig = "[(^%a)]eq",
+  s({trig = "([^%a])eq",
   snippetType = "autosnippet",
   dscr = "A LaTeX equation environment",
   wordTrig = false,
   regTrig = true},
-    fmt( -- The snippet code actually looks like the equation environment it produces.
+    fmt(
       [[
         \begin{equation}
             <>
