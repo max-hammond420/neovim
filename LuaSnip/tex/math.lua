@@ -36,7 +36,7 @@ return {
     }
   ),
 
-  -- only trigger when whitespace is the preceding character
+  -- (%s) only trigger when whitespace is the preceding character
   s({trig = "(%s)eq",
   snippetType = "autosnippet",
   dscr = "A LaTeX equation environment",
